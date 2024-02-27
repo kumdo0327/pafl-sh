@@ -5,7 +5,6 @@ then
     ~/PAFL/PAFL/main -p thefuck -l python -m $1 -v 32-13,11-1 -d /4tb/donguk/BugsInPy/thefuck -t /4tb/donguk/BugsInPy/thefuck -i ~/PAFL/oracle
     ~/PAFL/PAFL/main -p fastapi -l python -m $1 -v 16-2 -d /4tb/donguk/BugsInPy/fastapi -t /4tb/donguk/BugsInPy/fastapi -i ~/PAFL/oracle
     ~/PAFL/PAFL/main -p spacy -l python -m $1 -v 10-1 -d /4tb/donguk/BugsInPy/spacy -t /4tb/donguk/BugsInPy/spacy -i ~/PAFL/oracle
-    ~/PAFL/PAFL/main -p youtube-dl -l python -m $1 -v 35-1 -d /4tb/donguk/BugsInPy/youtube-dl -t /4tb/donguk/BugsInPy/youtube-dl -i ~/PAFL/oracle
 elif [ $# -eq 2 ];
 elif [ $# -eq 2 ];
 then
