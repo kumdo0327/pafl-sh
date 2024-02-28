@@ -5,16 +5,16 @@ echo "$pafl_sh_path"
 
 if [ $# -eq 0 ];
 then
-    sh $pafl_sh_path/run_sbfl_fast.sh ochiai,dstar,barinel
-    sh $pafl_sh_path/run_sbfl_slow.sh ochiai,dstar,barinel
+    sh $pafl_sh_path/run_sbfl_fast.sh
+    sh $pafl_sh_path/run_sbfl_slow.sh
 elif [ $# -eq 1 ];
 then
-    sh $pafl_sh_path/run_sbfl_fast.sh ochiai,dstar,barinel $1
-    sh $pafl_sh_path/run_prun_sbfl_slowy.sh ochiai,dstar,barinel $1
+    sh $pafl_sh_path/run_sbfl_fast.sh $1
+    sh $pafl_sh_path/run_sbfl_slow.sh $1
 elif [ $# -eq 2 ];
 then
-    sh $pafl_sh_path/run_sbfl_fast.sh ochiai,dstar,barinel $1 $2
-    sh $pafl_sh_path/run_sbfl_slow.sh ochiai,dstar,barinel $1 $2
+    sh $pafl_sh_path/run_sbfl_fast.sh $1 $2
+    sh $pafl_sh_path/run_sbfl_slow.sh $1 $2
 else
     exit 1
 fi
