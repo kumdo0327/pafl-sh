@@ -1,0 +1,3 @@
+~/PAFL/PAFL/main -p spacy -l python -m ochiai,dstar,barinel -v 10-4 -d /4tb/donguk/BugsInPy/spacy -t /4tb/donguk/BugsInPy/spacy -i ~/PAFL/oracle -c
+~/PAFL/PAFL/main -p spacy -l python -m ochiai,dstar,barinel -v 10-4 -d /4tb/donguk/BugsInPy/spacy -t /4tb/donguk/BugsInPy/spacy -i ~/PAFL/oracle -cg
+~/PAFL/PAFL/main -p spacy -l python -m ochiai,dstar,barinel -v 10-4 -d /4tb/donguk/BugsInPy/spacy -t /4tb/donguk/BugsInPy/spacy -i ~/PAFL/oracle -cg --pafl
