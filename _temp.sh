@@ -9,3 +9,4 @@
 ~/PAFL/PAFL/main -p fastapi -l python -m aeneas-dstar -v 16-2 -d /4tb/donguk/BugsInPy/fastapi -t /4tb/donguk/BugsInPy/fastapi -i ~/PAFL/oracle
 ~/PAFL/PAFL/main -p spacy -l python -m aeneas-dstar -v 7-1 -d /4tb/donguk/BugsInPy/spacy -t /4tb/donguk/BugsInPy/spacy -i ~/PAFL/oracle
 ~/PAFL/PAFL/main -p youtube-dl -l python -m aeneas-dstar -v 35-31,10-8,30,7,29,28,6,27,26,5,25,24,23-18,3,16,2,15,1,13,12,11 -d /4tb/donguk/BugsInPy/youtube-dl -t /4tb/donguk/BugsInPy/youtube-dl -i ~/PAFL/oracle
+~/PAFL/PAFL/main -p openssl -l cpp -m dstar -v 13,1,2,9,12,19,14,28,11,15,5,18,16,22,10,23,26,24,25,17,6,4,7,27,20,21 -d /4tb/donguk/bugscpp/openssl -t /4tb/donguk/bugscpp/test_openssl -i ~/PAFL/oracle
