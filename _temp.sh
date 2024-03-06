@@ -1,24 +1,3 @@
-#!bin/bash
-sh=$0
-pafl_sh_path="$(dirname "$sh")"
-echo "$pafl_sh_path"
-
-if [ $# -eq 0 ];
-then
-    sh $pafl_sh_path/run_sbfl.sh
-    sh $pafl_sh_path/run_dlfl.sh
-    sh $pafl_sh_path/run_aeneas.sh
-elif [ $# -eq 1 ];
-then
-    sh $pafl_sh_path/run_sbfl.sh $1
-    sh $pafl_sh_path/run_dlfl.sh $1
-    sh $pafl_sh_path/run_aeneas.sh $1
-elif [ $# -eq 2 ];
-then
-    sh $pafl_sh_path/run_sbfl_slow.sh $1 $2
-    sh $pafl_sh_path/run_sbfl_fast.sh $1 $2
-    sh $pafl_sh_path/run_aeneas.sh $1 $2
-    sh $pafl_sh_path/run_dlfl.sh $1 $2
-else
-    exit 1
-fi
+~/PAFL/PAFL/main -p libchewing -l cpp -m CNN-1,CNN-2,CNN-3,CNN-4,CNN-5 -v 6,8,3-5,7,2,1 -d /4tb/donguk/bugscpp/libchewing -t /4tb/donguk/bugscpp/test_libchewing -i ~/PAFL/oracle -cg --pafl
+~/PAFL/PAFL/main -p libchewing -l cpp -m RNN-1,RNN-2,RNN-3,RNN-4,RNN-5 -v 6,8,3-5,7,2,1 -d /4tb/donguk/bugscpp/libchewing -t /4tb/donguk/bugscpp/test_libchewing -i ~/PAFL/oracle -cg --pafl
+~/PAFL/PAFL/main -p libchewing -l cpp -m aeneas-ochiai,aeneas-dstar,aeneas-barinel -v 6,8,3-5,7,2,1 -d /4tb/donguk/bugscpp/libchewing -t /4tb/donguk/bugscpp/test_libchewing -i ~/PAFL/oracle -cg --paf
